@@ -1,0 +1,13 @@
+{
+  "name": "vadzimsharay-resume",
+  "author": {
+    "name": "Vadzim Sharai",
+    "email": "vadzimsharai@gmail.com"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2"
+  },
+  "scripts": {
+    "serve": "node index.js"
+  }
+}

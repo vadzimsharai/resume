@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vadzim Sharai | Resume</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="title" content="Vadzim Sharai | Resume" />
+    <meta
+      name="description"
+      content="Senior Full Stack Developer | I'm a client-focused developer with over 10 years of experience, who can deliver results that allow you to achieve your goals. "
+    />
+    <meta name="viewport" content="width=1024, initial-scale=0.5" />
+
+    <meta property="og:url" content="https://resume.vadzimsharai.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vadzim Sharai" />
+    <meta
+      property="og:image"
+      content="https://resume.vadzimsharai.dev/images/og.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="resume.vadzimsharai.dev" />
+    <meta property="twitter:url" content="https://resume.vadzimsharai.dev" />
+    <meta name="twitter:title" content="Vadzim Sharai" />
+    <meta
+      name="twitter:image"
+      content="https://resume.vadzimsharai.dev/images/og.png"
+    />
+
+    <link rel="icon" href="/images/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LBMN09EZKN"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag =
+        window.gtag ||
+        function gtag() {
+          dataLayer.push(arguments);
+        };
+      window.gtag("js", new Date());
+      window.gtag("config", "G-LBMN09EZKN");
+    </script>
+
+    <script>
+      function toggleLight() {
+        if (document.body.classList.contains("light-theme")) {
+          document.body.classList.remove("light-theme");
+          document.body.classList.add("dark-theme");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.body.classList.add("light-theme");
+          document.body.classList.remove("dark-theme");
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      function savePDF() {
+        const theme = localStorage.getItem("theme") || "dark";
+
+        window
+          .open("pdf/VadzimSharai.Resume." + theme + ".pdf", "_blank")
+          .focus();
+      }
+
+      function handlePDF() {
+        if (window.savePDFDev) {
+          savePDFDev();
+        } else {
+          savePDF();
+        }
+      }
+    </script>
+  </head>
+  <body class="dark-theme">
+    <script>
+      (function () {
+        const theme = localStorage.getItem("theme");
+
+        if (theme === "light") {
+          document.body.classList.add("light-theme");
+          document.body.classList.remove("dark-theme");
+        }
+      })();
+    </script>
+    <div class="container" id="container">
+      <div class="head">
+        <div class="avatar">
+          <img src="/images/profile.png" width="100%" alt="Vadzim's Photo" />
+        </div>
+
+        <div class="info">
+          <h1>Vadzim Sharai</h1>
+          <i>Senior Full Stack Developer</i>
+          <br />
+          <br />
+          <p class="about">
+            I'm a client-focused developer with over
+            <span id="experience">10</span> years of experience, who can deliver
+            results that allow you to achieve your goals.
+          </p>
+          <script>
+            document.getElementById("experience").innerHTML =
+              new Date().getFullYear() - 2014;
+          </script>
+        </div>
+      </div>
+      <div class="content">
+        <div class="left-content">
+          <div>
+            <h3>Email</h3>
+            <a href="mailto://vadzimsharai@gmail.com">vadzimsharai@gmail.com</a>
+          </div>
+
+          <div>
+            <h3>Github</h3>
+            <a
+              href="https://github.com/vadzimsharai"
+              target="_blank"
+              rel="canonical"
+              >vadzimsharai</a
+            >
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <ul>
+              <li>English <small>[B2]</small></li>
+              <li>Belarusian <small>[Native]</small></li>
+              <li>Russian <small>[Native]</small></li>
+            </ul>
+          </div>
+          <div>
+            <h3>My hobbies</h3>
+            <ul>
+              <li>Traveling</li>
+              <li>Hiking</li>
+              <li>Diving</li>
+              <li>Photo</li>
+              <li>GameDev</li>
+            </ul>
+          </div>
+          <div id="my-locations">
+            <h3>My locations</h3>
+            <small>
+              As a digital nomad, I often move between countries (about once
+              every six months). My travels often take me to <b>Georgia</b>,
+              sometimes to <b>Bali</b>, and sometimes to <b>Belarus</b> where I
+              visit my parents.
+            </small>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="section">
+            <div class="section-title">MAIN SKILLS</div>
+            <div class="section-content card-boxes">
+              <div class="card card-box">
+                <div>
+                  <div class="card-header">
+                    <div>
+                      <h3>TypeScript Backend</h3>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <br />
+                    <ul>
+                      <li>NestJS</li>
+                      <li>Fastify</li>
+                      <li>Meteor.js</li>
+                      <li>Socket.IO</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-box">
+                <div>
+                  <div class="card-header">
+                    <div>
+                      <p>TypeScript Frontend</p>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <br />
+                    <ul>
+                      <li>React</li>
+                      <li>Vue</li>
+                      <li>Next.js</li>
+                      <li>Angular</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-box">
+                <div>
+                  <div class="card-header">
+                    <div>
+                      <p>Python Backend</p>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <br />
+                    <ul>
+                      <li>Django</li>
+                      <li>Flask</li>
+                      <li>Sanic</li>
+                      <li>asyncio</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-box">
+                <div>
+                  <div class="card-header">
+                    <div>
+                      <p>Machine Learning</p>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <br />
+                    <ul>
+                      <li>Tensorflow</li>
+                      <li>Torch</li>
+                      <li>Pandas</li>
+                      <li>HuggingFace</li>
+                      <li>OpenAI GPT</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-title">ADDITIONAL SKILLS</div>
+            <div class="section-content">
+              <div class="card">
+                <div>
+                  <div class="card-header">
+                    <div>
+                      <h3>Data Engineering</h3>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p>Strong in these technologies:</p>
+                    <ul>
+                      <li>
+                        <!--  -->
+                        PostgreSQL, MySQL, Mongodb, Redis, Memcache
+                      </li>
+                      <li>
+                        <!--  -->
+                        Influxdb, Tarantool, ClickHouse
+                      </li>
+                      <li>
+                        <!--  -->
+                        Blazegraph, Neo4j, ArangoDB
+                      </li>
+                      <li>
+                        <!--  -->
+                        Spark, Hadoop, Apache Storm, Kafka Streams
+                      </li>
+                      <li>
+                        <!--  -->
+                        ZeroMQ, Kafka, Rabbitmq, Airflow, Nifi
+                      </li>
+                      <li>
+                        <!--  -->
+                        Msgpack, Protobuf, Avro, Parquet
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="pdf-split" />
+
+              <div class="card">
+                <div>
+                  <div class="card-header">
+                    <div>
+                      <h3>Infrastructure / DevOps</h3>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p>Strong in these technologies:</p>
+                    <ul>
+                      <li>
+                        <!--  -->
+                        Clouds: AWS, GCP, DO
+                      </li>
+                      <li>
+                        <!--  -->
+                        OS: Linux
+                      </li>
+                      <li>
+                        <!--  -->
+                        CI/CD: Gitlab CI, GitHub Actions, Jenkins
+                      </li>
+                      <li>
+                        Orchestration: Kubernetes, Docker, Terraform, Ansible
+                      </li>
+                      <li>
+                        Monitoring: ELK, Grafana, Prometheus, Graylog, Sentry,
+                        Zabbix
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr />
+
+              <div class="card">
+                <div>
+                  <div class="card-header">
+                    <div>
+                      <h3>AI / Machine Learning</h3>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p>Strong in these technologies:</p>
+                    <ul>
+                      <li>
+                        Tensorflow, PyTorch, OpenCV, Keras, Theano, Dask, Faiss
+                      </li>
+                      <li>
+                        Rasa NLU, NLTK, Gensim, Spacy, HuggingFace, Numpy,
+                        Pandas, Scikit-Learn
+                      </li>
+                      <li>
+                        JENA, RDF, OWL, SPARQL, NEO4J, ArangoDB, Blazegraph
+                      </li>
+                      <li>
+                        <!--  -->
+                        OpenAI API, Anthropic API
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr />
+
+              <div class="card">
+                <div>
+                  <div class="card-header">
+                    <div>
+                      <h3>Other Technologies</h3>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <!--  -->
+                        Java 8-21 | Spring, Reactive, Protobuf
+                      </li>
+                      <li>
+                        <!--  -->
+                        C++ 11-20 | Python extensions, Unreal Engine (4-5)
+                      </li>
+                      <li>
+                        <!--  -->
+                        Lua | Tarantool scripts, Lightroom plugins
+                      </li>
+                      <li>
+                        <!--  -->
+                        Go | Kubernetes plugins, Microservices
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+
+          <div class="section" id="employment">
+            <div class="section-title">EMPLOYMENT</div>
+            <div class="section-content">
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <h3>Tech Lead / Full Stack Developer</h3>
+                    <small class="gray">Truly Social Games LLC, remote</small>
+                  </div>
+                  <div>
+                    <small class="gray">2020 - 2023</small>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Key Responsibilities:</p>
+                  <ul>
+                    <li>
+                      <!--  -->
+                      Design architecture
+                    </li>
+                    <li>
+                      <!--  -->
+                      Code Review and Planning of technical tasks (20% of the
+                      time)
+                    </li>
+                    <li>
+                      <!--  -->
+                      Backend for Mobile Games (Node.JS)
+                    </li>
+                    <li>
+                      <!--  -->
+                      Frontend for internal tools (React)
+                    </li>
+                    <li>
+                      <!--  -->
+                      CI/CD + GCP Management (Gitlab, Terraform, Kubernetes,
+                      etc)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="pdf-split" />
+
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <h3>Tech Lead / Full Stack Developer</h3>
+                    <small class="gray"
+                      >Konstruktor Inc, San Francisco, remote</small
+                    >
+                  </div>
+                  <div>
+                    <small class="gray">2018 - 2020</small>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Key Responsibilities:</p>
+                  <ul>
+                    <li>
+                      <!--  -->
+                      Docs writing
+                    </li>
+                    <li>
+                      <!--  -->
+                      Design architecture
+                    </li>
+                    <li>
+                      <!--  -->
+                      Code Review and Planning of technical tasks (40% of the
+                      time)
+                    </li>
+                    <li>
+                      <!--  -->
+                      AI Systems development ( Knowledge Engineering / ML / Data
+                      Engineering )
+                    </li>
+                    <li>
+                      <!--  -->
+                      Web Platforms development (Django + Flask, Vue + React,
+                      etc)
+                    </li>
+                    <li>
+                      <!--  -->
+                      CI/CD + AWS Management (Gitlab, Terraform, Ansible,
+                      Kubernetes, etc)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr />
+
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <h3>Python Backend Developer</h3>
+                    <small class="gray">Mediatech Ltd, Minsk</small>
+                  </div>
+                  <div>
+                    <small class="gray">2016 - 2018</small>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Key Responsibilities:</p>
+                  <ul>
+                    <li>
+                      <!--  -->
+                      Design backend architecture
+                    </li>
+                    <li>
+                      <!--  -->
+                      Code Review
+                    </li>
+                    <li>
+                      <!--  -->
+                      Media Streaming Platform development (Django, Flask,
+                      Sanic, ffmpeg, etc)
+                    </li>
+                    <li>
+                      <!--  -->
+                      CI/CD Management (Gitlab, Jenkins, Jelastic, etc)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr />
+
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <h3>Full Stack Developer</h3>
+                    <small class="gray">Freelance</small>
+                  </div>
+                  <div>
+                    <small class="gray">2014 - present</small>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Mostly I got offers from my regular clients. My last
+                    project: AI assistant based on GPT4.
+                  </p>
+                  <br />
+                  <p>
+                    I have also occasionally worked as a freelancer on platforms
+                    like Upwork.
+                  </p>
+                  <br />
+                  <a
+                    href="https://www.upwork.com/freelancers/~015799d8c2fd9b3926"
+                    target="_blank"
+                    rel="nofollow"
+                    id="upwork-link"
+                    >My Upwork Profile</a
+                  >
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+
+          <div class="section" id="education">
+            <div class="section-title">EDUCATION</div>
+            <div class="section-content">
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <h3>
+                      Belarusian State University of Informatics and
+                      Radioelectronics
+                    </h3>
+                    <small>Bachelor degree</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="light tools" onclick="toggleLight()">
+      <svg
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 9a3 3 0 0 1 3-3m-2 15h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 6 9c0 4 4 5 4 9h4Z"
+        />
+      </svg>
+    </div>
+
+    <div class="pdf tools" onclick="handlePDF()">
+      <svg
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M9 2.2V7H4.2l.4-.5 3.9-4 .5-.3Zm2-.2v5a2 2 0 0 1-2 2H4a2 2 0 0 0-2 2v7c0 1.1.9 2 2 2 0 1.1.9 2 2 2h12a2 2 0 0 0 2-2 2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2V4a2 2 0 0 0-2-2h-7Zm-6 9a1 1 0 0 0-1 1v5a1 1 0 1 0 2 0v-1h.5a2.5 2.5 0 0 0 0-5H5Zm1.5 3H6v-1h.5a.5.5 0 0 1 0 1Zm4.5-3a1 1 0 0 0-1 1v5c0 .6.4 1 1 1h1.4a2.6 2.6 0 0 0 2.6-2.6v-1.8a2.6 2.6 0 0 0-2.6-2.6H11Zm1 5v-3h.4a.6.6 0 0 1 .6.6v1.8a.6.6 0 0 1-.6.6H12Zm5-5a1 1 0 0 0-1 1v5a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2h-1v-1h1a1 1 0 1 0 0-2h-2Z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </body>
+</html>
