@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-theme">
   <head>
     <title>Vadzim Sharai | Resume</title>
 
@@ -36,6 +36,8 @@
 
     <link rel="stylesheet" href="./style.css" />
 
+    <script src="/index.js"></script>
+
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-LBMN09EZKN"
@@ -51,48 +53,8 @@
       window.gtag("js", new Date());
       window.gtag("config", "G-LBMN09EZKN");
     </script>
-
-    <script>
-      function toggleLight() {
-        if (document.body.classList.contains("light-theme")) {
-          document.body.classList.remove("light-theme");
-          document.body.classList.add("dark-theme");
-          localStorage.setItem("theme", "dark");
-        } else {
-          document.body.classList.add("light-theme");
-          document.body.classList.remove("dark-theme");
-          localStorage.setItem("theme", "light");
-        }
-      }
-
-      function savePDF() {
-        const theme = localStorage.getItem("theme") || "dark";
-
-        window
-          .open("pdf/VadzimSharai.Resume." + theme + ".pdf", "_blank")
-          .focus();
-      }
-
-      function handlePDF() {
-        if (window.savePDFDev) {
-          savePDFDev();
-        } else {
-          savePDF();
-        }
-      }
-    </script>
   </head>
-  <body class="dark-theme">
-    <script>
-      (function () {
-        const theme = localStorage.getItem("theme");
-
-        if (theme === "light") {
-          document.body.classList.add("light-theme");
-          document.body.classList.remove("dark-theme");
-        }
-      })();
-    </script>
+  <body>
     <div class="container" id="container">
       <div class="head">
         <div class="avatar">
@@ -119,7 +81,9 @@
         <div class="left-content">
           <div>
             <h3>Email</h3>
-            <a href="mailto://vadzimsharai@gmail.com">vadzimsharai@gmail.com</a>
+            <a href="mailto://vadzimsharai&commat;gmail&period;com"
+              >vadzimsharai&commat;gmail&period;com</a
+            >
           </div>
 
           <div>
